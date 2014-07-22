@@ -1,0 +1,8 @@
+
+{% assign featured = site.projects | where:"featured",true | sort: 'weight' %}
+{% for post in featured %}
+	<li>
+		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+		{{ post.featured }}
+	</li>
+{% endfor %}

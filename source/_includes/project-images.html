@@ -1,0 +1,7 @@
+{% for row in page.gallery %}
+	<li>
+		{% for col in row %}
+			{{ col.columns }}
+		{% endfor %}
+	</li>
+{% endfor %}
