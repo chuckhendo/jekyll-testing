@@ -18,23 +18,19 @@ plugins: ./plugins
 
 # Asset Pipeline settings
 assets:
+  cachebust: none
   sources:
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
     - ../components
-
-# Collections
-collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
+    - ../components/bootstrap-sass-official/assets/stylesheets
 
 defaults:
   -
     scope:
-      path: "" # an empty string here means all files in the project
-      type: "projects"
+      path: "projects" # an empty string here means all files in the project
     values:
       featured: false
       weight: 100
+      layout: project-single

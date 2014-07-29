@@ -1,3 +1,8 @@
-html, body {
-	background: #fff;
-}
+//= require _bootstrap-sprockets
+//= require _bootstrap-custom
+//= require_directory .
+
+
+/*** 
+No css should go in this file. Use the partials listed above, or add a new one
+***/

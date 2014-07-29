@@ -1,0 +1,13 @@
+
+$ ->
+	fpImages =
+		<%= site.data["fp-images"].collect { |image| "#{image}" } %>
+
+	imageEl = $('.front-page-hero .bg-image')
+	imageSrc = fpImages[Math.floor((Math.random() * 3) )]
+
+
+	$(imageEl).lazyload(imageSrc)
+	
+
+	

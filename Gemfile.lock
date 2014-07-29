@@ -1,7 +1,21 @@
+GIT
+  remote: git://github.com/chuckhendo/rack-jekyll/
+  revision: d7ff7eccbf25a8d623638e84864530a5c85973cd
+  branch: autofix
+  specs:
+    rack-jekyll (0.4.1)
+      jekyll (>= 1.3)
+      rack (~> 1.5)
+
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.3.6)
+    autoprefixer-rails (2.1.1.20140710)
+      execjs
     blankslate (2.1.2.4)
+    bootstrap-sass (3.2.0.0)
+      sass (~> 3.2)
     celluloid (0.15.2)
       timers (~> 1.1.0)
     classifier (1.3.4)
@@ -11,8 +25,11 @@ GEM
       execjs
     coffee-script-source (1.7.1)
     colorator (0.1)
+    ejs (1.1.1)
     execjs (2.2.1)
     fast-stemmer (1.0.2)
+    fastimage (1.6.3)
+      addressable (~> 2.3, >= 2.3.5)
     ffi (1.9.3)
     hike (1.2.3)
     jekyll (2.1.1)
@@ -89,9 +106,17 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
+  bootstrap-sass
   coffee-script
-  jekyll (> 2.1)
+  ejs
+  fastimage
+  jekyll (>= 2.1)
   jekyll-assets
   kramdown
+  listen
+  rack-jekyll!
   sass
+  sprockets-helpers
+  sprockets-sass
   uglifier

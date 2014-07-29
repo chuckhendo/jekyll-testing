@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="container project-single">
+	<div class="row">
+		<div class="content col-md-7">
+			<h2>{{ page.title }}</h2>
+			<p class="description">{{ content }}</p>
+		</div>
+	</div>
+	{% for image in page.project_images %}
+		<div class="project-image col-md-12" style="padding-top: {{ image.height | times: 100.0 | divided_by: image.width }}%"><div class="image-inner" data-lazy-load="{{ image.src }}"></div></div>
+	{% endfor %}
+</div>
