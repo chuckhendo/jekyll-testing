@@ -8,10 +8,12 @@
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <!-- build:css(build, .) ./css/app.css -->
     <!-- bower:css -->
     <!-- endbower -->
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <!-- endbuild -->
 
   </head>
     <body>
@@ -19,14 +21,14 @@
   
     {{ content }}
 
-    <!-- bower:js -->
-    <script src="../../components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
     <footer class="site-footer container">
 	<p>&copy;Harrison Croft 2014  -  <a href="mailto:{{ site.data.contact.email }}">email</a> | {{ site.data.contact.phone | replace: '-', ' ' }}</p>
     </footer>
-
-    <script src="/js/app.js"></script>
+    <!-- build:js(build, .) .js/app.js --> 
+    <!-- bower:js -->
+    <!-- endbower -->    
+    <script src="./js/app.js"></script>
+    <!-- endbuild -->
 
     </body>
 </html>

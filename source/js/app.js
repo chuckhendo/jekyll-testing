@@ -21,7 +21,18 @@
     siteHeader = $('.site-header');
     return $('.show-nav').on('click', function(e) {
       e.preventDefault();
-      return siteHeader.toggleClass('nav-visible');
+      siteHeader.toggleClass('nav-visible');
+      if (siteHeader.hasClass('nav-visible')) {
+        siteHeader.addClass('animate-in');
+        return setTimeout(function() {
+          return siteHeader.removeClass('animate-in');
+        }, 1000);
+      } else {
+        siteHeader.addClass('animate-out');
+        return setTimeout(function() {
+          return siteHeader.removeClass('animate-out');
+        }, 1000);
+      }
     });
   });
 

@@ -8,6 +8,11 @@ prefix      = require("gulp-autoprefixer")
 cp          = require("child_process")
 include     = require("gulp-include")
 wiredep     = require('wiredep').stream
+usemin      = require('gulp-usemin')
+uglify      = require('gulp-uglify')
+minifyHtml  = require('gulp-minify-html')
+minifyCss   = require('gulp-minify-css')
+rev         = require('gulp-rev')
 
 
 messages =
@@ -138,9 +143,19 @@ gulp.task "coffee", ->
 Inject files from Bower.json into our layout file
 ###
 gulp.task 'bower', ->
-  gulp.src(paths.source.layoutDefault)
+  gulp.src('./build/**/*.html')
     .pipe wiredep()
-    .pipe gulp.dest(paths.source.layouts)
+    .pipe gulp.dest('./build')
+
+
+
+gulp.task 'usemin', ->
+  gulp.src('./build/**/*.html')
+    .pipe usemin
+      css: [minifyCss(), 'concat'],
+      html: [minifyHtml({empty: true})],
+      js: [uglify(), rev()]
+  .pipe(gulp.dest('./build/'))
 
 
 ###
