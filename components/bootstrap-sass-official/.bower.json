@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-sass",
-  "version": "3.2.0",
+  "version": "3.2.0+1",
   "homepage": "https://github.com/twbs/bootstrap-sass",
   "authors": [
     "Thomas McDonald",
@@ -47,14 +47,14 @@
   "dependencies": {
     "jquery": ">= 1.9.0"
   },
-  "_release": "3.2.0",
+  "_release": "3.2.0+1",
   "_resolution": {
     "type": "version",
-    "tag": "v3.2.0",
-    "commit": "a5f5954268779ce0faf7607b3c35191a8d0fdfe6"
+    "tag": "v3.2.0+1",
+    "commit": "6f45298818f454aead771ecd0c6398d7c17d8649"
   },
   "_source": "git://github.com/twbs/bootstrap-sass.git",
-  "_target": "~3.2.0",
+  "_target": "~3.2.0+1",
   "_originalSource": "bootstrap-sass-official",
   "_direct": true
 }

@@ -1,0 +1,144 @@
+header.front-page-hero {
+	width: 100%;
+	height: 85%;
+	background: $black no-repeat 50% 50%;
+	background-size: cover;
+	position: relative;
+	font-size: 0;
+
+	&:before {
+		content: '';
+		height: 100%;
+		width: 0px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.bg-image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-size: cover;
+		background-repeat: none;
+		background-position: 50% 50%;
+		opacity: 0;
+
+		&.loaded {
+			opacity: 1;
+		}
+
+		&.transition {
+			transition: .2s opacity;
+		}
+	}
+
+	h2 {
+		font-family: 'Crimson Text';
+		font-weight: 900;
+		color: #fff;
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+		text-align: center;
+		position: relative;
+		z-index: 2;
+		margin: 0;
+		font-size: 40px;
+
+		&:after {
+			content: '';
+			display: block;
+			width: 200px;
+			height: 1px;
+			background: $red;
+			margin: 23px auto 0;
+		}
+	}
+}
+
+.front-page {
+	.featured-projects {
+		list-style: none;
+		padding: 0;
+		margin-top: 90px;
+
+		li {
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			background-size: cover;
+			cursor: pointer;
+			position: relative;
+
+			padding-top: percentage(6 / $grid_columns);
+
+			@media (min-width: $screen-md) {
+				padding-top: percentage(4 / $grid_columns);			  
+			}
+
+
+			.overlay {
+				visibility: hidden;
+				opacity: 0;
+				background: rgba($red, 0.86);
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				transition: 0.3s opacity, 0s visibility 0.3s;
+				font-size: 0;
+  				
+
+				&:before {
+					content: '';
+					width: 0;
+					height: 100%;
+					display: inline-block;
+					vertical-align: middle;
+				}
+
+				span {
+					font-size: 16px;
+	  				font-family: "Montserrat";
+	  				letter-spacing: 0.2em;
+	  				color: #fff;
+					font-weight: bold;
+					text-transform: uppercase;
+					text-align: center;
+					width: 100%;
+					vertical-align: middle;
+					display: inline-block;
+					padding-bottom: 14px;
+					position: relative;
+
+					&:before {
+						content: '';
+						display: block;
+						width: 0%;
+						height: 1px;
+						background: #b4d6cc;
+						position: absolute;
+						bottom: -1px;
+						left: 0;
+						right: 0;
+						margin: auto;
+						transition: 0.3s width 0.2s;
+					}
+				}
+
+			}
+
+			&:hover .overlay {
+				visibility: visible;
+				opacity: 1;
+				transition-delay: 0s;
+
+				span:before {
+					width: 40%;
+				}
+			}
+		}
+	}
+}

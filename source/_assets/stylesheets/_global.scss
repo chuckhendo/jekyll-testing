@@ -1,5 +1,3 @@
-@import 'variables';
-
 html,body {
 	width: 100%;
 	height: 100%;
@@ -22,4 +20,9 @@ footer.site-footer {
 	color: $black;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
+	display: none;
+
+	p {
+		margin: 0; 
+	}
 }

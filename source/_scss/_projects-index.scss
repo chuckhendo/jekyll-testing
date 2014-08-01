@@ -1,0 +1,72 @@
+.projects-index {
+	padding-top: 107px;
+
+	.projects {
+		list-style: none;
+		padding: 0;
+
+		.project {
+			margin-bottom: 46px;
+
+			@media (max-width: $screen-sm-max) {
+				&:nth-child(2n + 1) {
+					clear: left;
+				}
+			}
+
+			@media (min-width: $screen-md-min) {
+				&:nth-child(3n + 1) {
+					clear: left;
+				}
+			}
+			
+			.img {
+				display: block;
+				width: 100%;
+				height: 0;
+				padding-top: 57.22%;
+				background-color: $whiteish;
+				background-position: 50% 50%;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+
+			h3 {
+				font-family: Montserrat;
+				color: $black;
+				font-size: 14px;
+				font-weight: 700;
+				margin: 15px 0 5px 0;
+				padding-left: 3px;
+
+				a {
+					color: $black;
+				}
+			}
+
+			.tags {
+				list-style: none;
+				padding: 0;
+				padding-left: 3px;
+
+				li {
+					display: inline;
+					font-family: Menlo;
+					color: #848383;
+					font-size: 10px;
+					font-weight: 400;
+
+					&:after {
+						content: ', ';
+					}
+
+					&:last-child:after {
+						content: '';
+					}
+				}
+			}
+		}
+	}
+
+
+}

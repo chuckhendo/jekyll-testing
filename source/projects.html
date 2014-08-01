@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="projects-index">
+
+	<div class="container">
+		<ul class="projects row">
+			{% for project in site.projects | sort: 'order' %}
+				<li class="col-md-4 col-sm-6 col-xs-12 project">
+					<a href="{{ project.url }}" class="img" data-lazy-load="{{ project.thumbnail }}"></a>
+					<h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+					<ul class="tags">
+					{% for tag in project.tags %}
+						<li>{{ tag }}</li>
+					{% endfor %}
+					</ul>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+
+</div>

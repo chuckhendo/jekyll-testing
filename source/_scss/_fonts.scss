@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'hcroft';
+	src:url('../fonts/hcroft.eot?-1p72x2');
+	src:url('../fonts/hcroft.eot?#iefix-1p72x2') format('embedded-opentype'),
+		url('../fonts/hcroft.woff?-1p72x2') format('woff'),
+		url('../fonts/hcroft.ttf?-1p72x2') format('truetype'),
+		url('../fonts/hcroft.svg?-1p72x2#hcroft') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'hcroft';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-hcroft:before {
+	content: "\e600";
+}
+.icon-dribbble:before {
+	content: "\e601";
+}
+.icon-facebook:before {
+	content: "\e602";
+}
+.icon-instagram:before {
+	content: "\e603";
+}
+.icon-twitter:before {
+	content: "\e604";
+}

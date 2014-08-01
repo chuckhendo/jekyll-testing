@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="about-page">
+	<header class="container">
+		<div class="row">
+			<div class="col-sm-4 harrison-pic">
+				<img src="{{ page.image }}" alt="Harrison Croft">
+			</div>
+			<div class="heading-text col-md-7 col-sm-8 col-md-offset-1">
+				<h3>{{ page.tagline }}</h3>
+				<a href="/contact">{{ page.callToAction }}</a>
+			</div>
+		</div>
+	</header>
+	<div class="content">
+		<div class="container">
+			{% for section in page.sections %}
+				<section class="{{ section }}">
+					{% capture partial %}{{ section }}.md{% endcapture %}
+					{% capture sectioncontent %}{% include {{ partial }} %}{% endcapture %}
+					{{ sectioncontent | markdownify }}
+				</section>
+			{% endfor %}
+		</div>
+	</div>
+</div>

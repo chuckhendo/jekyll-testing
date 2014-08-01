@@ -1,0 +1,165 @@
+@import "variables";
+
+/*** Nav Hidden ***/
+header.site-header {
+	background-color: $black;
+	border-bottom: 1px $black solid;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: $navHeight;
+	z-index: 15;
+
+	.container {
+		position: relative;
+		height: 100%;
+	}
+
+	/*** Logo ***/
+	.site-title {
+		font-size: 0;
+		color: transparent;
+		opacity: 1;
+		visibility: visible;
+
+		&:before {
+			font-size: 65px;
+			line-height: $navHeight;
+			color: #fff;
+		}
+	}
+
+
+	/*** Nav Button ***/
+	.show-nav {
+		$navBtnTotalHeight: ($navBtnLineHeight * 3 + $navBtnMargin * 2) + $navBtnClickPadding;
+
+		cursor: pointer;
+		position: absolute;
+		margin: auto 0;
+		width: $navBtnWidth + ($navBtnClickPadding * 2);
+		height: $navBtnTotalHeight;
+		top: ($navHeight / 2) - ($navBtnTotalHeight / 2);
+		right: 0px;
+		cursor: pointer;
+
+		.show-nav-icon {
+			background-color: $navBtnColor;
+			width: $navBtnWidth;
+			height: $navBtnLineHeight;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+
+			&:before, &:after {
+				content: '';
+				width: $navBtnWidth;
+				height: $navBtnLineHeight;
+				background-color: $navBtnColor;
+				position: absolute;
+				left: 0;
+			}
+
+			&:before {
+				top: -$navBtnMargin - $navBtnLineHeight;
+			}
+
+			&:after {
+				bottom: -$navBtnMargin - $navBtnLineHeight;
+			}
+		}
+	}
+
+	/*** Nav ***/
+	.site-nav {
+		visibility: hidden;
+		opacity: 0;
+		position: relative;
+
+		.main-nav {
+			list-style: none;
+			position: relative;
+			top: -10px;
+
+			.page-link {
+				font-family: "Montserrat";
+				font-size: 12px;
+				color: $teal;
+				border-bottom: 1px solid $teal;
+				text-transform: uppercase;
+				text-decoration: none;
+				text-align: right;
+				display: block;
+				width: 100%;
+				margin-bottom: 12px;
+				padding-bottom: 4px;
+
+				&:hover, &.current {
+					color: #262626;
+					border-bottom-color: #262626;
+				}
+			}
+
+		}
+
+		.social {
+			position: absolute;
+			bottom: 15px;
+			left: 0;
+
+			h5 {
+				font-size: 14px;
+				letter-spacing: .1em;
+				font-family: "Montserrat";
+				color: $teal;
+				text-transform: uppercase;
+			}
+
+			ul {
+				list-style: none;
+				padding: 0;
+			}
+
+			li {
+				font-size: 0;
+				display: inline-block;
+
+				a {
+					color: transparent;
+					margin-right: 15px;
+
+					&:before {
+						font-size: 28px;
+						color: $teal;
+					}
+
+					&:hover:before {
+						color: $red;
+					}
+				}
+			}
+		}
+
+	}
+}
+
+
+/*** Nav Visible ***/
+header.site-header.nav-visible {
+	background-color: #fff;
+  	height: 184px;
+
+	.site-title {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.site-nav {
+		opacity: 1;
+		visibility: visible;
+	}
+}

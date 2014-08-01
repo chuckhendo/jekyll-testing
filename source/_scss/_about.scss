@@ -1,0 +1,146 @@
+.about-page {
+	header.container {
+		font-size: 0;
+		padding: 20px 15px;
+
+		@media (min-width: $screen-sm-min) {
+			padding: 56px 15px;
+		}
+
+		.harrison-pic {
+			display: inline-block;
+			vertical-align: middle;
+			float: none;
+			padding-bottom: 20px;
+
+			@media (min-width: $screen-sm-min) {
+				padding-bottom: 0;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.heading-text {
+			padding: 0 15px;
+			display: inline-block;
+			vertical-align: middle;
+			float: none;
+
+			@media (min-width: $screen-sm-min) {
+				padding: 0 30px;
+			}
+
+
+			h3 {
+				font-family: Crimson Text;
+				color: $black;
+				font-size: 20px;
+				font-weight: 300;
+				line-height: 1.5;
+				margin: 0 0 45px;
+
+				@media (min-width: $screen-sm-min) {
+					font-size: 30px;
+				}
+			}
+
+			a {
+				font-family: Montserrat;
+				color: $teal;
+				font-size: 18px;
+				font-weight: 700;
+				text-transform: uppercase;
+				padding-bottom: 12px;
+				position: relative;
+				text-decoration: none;
+
+				&:after {
+					content: '';
+					display: block;
+					background-color: $red;
+					width: 0;
+					height: 1px;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					margin: 0 auto;
+					transition: 0.3s width, 0.3s opacity;
+					opacity: 0;
+				}
+
+				&:hover:after {
+					width: 100%;
+					opacity: 1;
+				}
+			}
+		}
+
+	}
+
+	.content {
+		background: $black;
+		font-family: Montserrat;
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 26px;
+
+		h2 {
+			margin: 0 0 30px;
+			font-family: Montserrat;
+			font-size: 18px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		section {
+			border-bottom: 1px $red solid;
+			padding: 70px 0;
+
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			column-count: 1;
+			column-gap: 30px;
+
+			@media (min-width: $screen-sm-min) {
+				column-count: 3;
+			}
+
+			@media (min-width: $screen-md-min) {
+				column-count: 4;
+			}
+
+
+			li {
+				padding: 5px 0;
+				display: inline-block;
+				width: 100%;
+			}
+
+			em {
+				display: block;
+				font-family: Montserrat;
+				color: $teal;
+				font-size: 14px;
+				font-weight: 700;
+				font-style: normal;
+			}
+		}
+
+		section.about-awards {
+			ul li {
+				padding: 10px 0;
+			}
+		}
+	}
+}

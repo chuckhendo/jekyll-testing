@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="contact">
+	<div class="container">
+		<div class="row">
+			<div class="intro col-sm-12 col-md-11">{{ content }}</div>
+			<div class="col-sm-5 col-xs-12 contact-info">
+				<h5>Location</h5>
+				<h6>{{ site.data.contact.location }}</h6>
+
+				<h5>Phone</h5>
+				<h6>{{ site.data.contact.phone }}</h6>
+
+				<h5>Email</h5>
+				<h6><a href="mailto:{{ site.data.contact.email }}"></a>{{ site.data.contact.email }}</h6>
+			</div>
+			<div class="col-sm-7 col-xs-12 contact-form">
+				<form action="http://getsimpleform.com/messages?form_api_token=019d55c1f438494ef60007c154eded6d" method="post">
+				  <!-- all your input fields here.... -->
+				  <label for="name">Name</label><input type='text' name='name' id="name" />
+				  <label for="email">Email</label><input type='email' name='email' id="email" />
+				  <label for="message">Message</label>
+				  <textarea name="message" id="message" cols="30" rows="5"></textarea>
+				  <input type='submit' value='Submit' />
+				</form>				
+			</div>
+		</div>	
+	</div>
+</div>

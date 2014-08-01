@@ -30,8 +30,11 @@ module Jekyll
           featured_image = Jekyll::ProjectFile.new(@site, @site.source, base_path, f_base)
           @data["featured_image"] = featured_image.relative_path
           site.static_files << featured_image
+        elsif f_base =~ /^thumb\..*/
+          thumbnail = Jekyll::ProjectFile.new(@site, @site.source, base_path, f_base)
+          @data["thumbnail"] = thumbnail.relative_path
+          site.static_files << thumbnail
         elsif f_base != "index.md"
-
           project_image = Jekyll::ProjectFile.new(@site, @site.source, base_path, f_base)
           if !@data["project_images"]
             @data["project_images"] = []

@@ -1,3 +1,14 @@
-body {
-	display: none; 
-}
+@import 'hcroft-variables';
+@import 'bootstrap-custom';
+@import 'fonts';
+@import 'global';
+@import 'nav';
+@import 'front-page';
+@import 'project-single'; 
+@import 'projects-index'; 
+@import 'about'; 
+@import 'contact'; 
+
+/*** 
+No css should go in this file. Use the partials listed above, or add a new one
+***/

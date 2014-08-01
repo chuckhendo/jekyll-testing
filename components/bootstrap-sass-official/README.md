@@ -26,16 +26,16 @@ gem 'autoprefixer-rails'
 
 `bundle install` and restart your server to make the files available through the pipeline.
 
-In `app/assets/application.css.sass`:
+In `app/assets/stylesheets/application.css.scss`:
 
-```sass
-@import "bootstrap-sprockets"
-@import "bootstrap"
+```scss
+@import "bootstrap-sprockets";
+@import "bootstrap";
 ```
 
 Do not use `//= require` in Sass or your other stylesheets will not be [able to access][antirequire] the Bootstrap mixins or variables.
 
-In `app/assets/application.js`:
+In `app/assets/javascripts/application.js`:
 
 ```js
 //= require jquery
@@ -141,8 +141,8 @@ You can also import components explicitly. To start with a full list of modules 
 Then comment out components you do not want from `bootstrap-custom`.
 In the application Sass file, replace `@import 'bootstrap'` with:
 
-```sass
-@import 'bootstrap-custom'
+```scss
+@import 'bootstrap-custom';
 ```
 
 #### Sass: Number Precision
@@ -192,17 +192,17 @@ You can check dependencies in the [Bootstrap JS documentation][jsdocs].
 
 The fonts are referenced as:
 
-```sass
+```scss
 "#{$icon-font-path}#{$icon-font-name}.eot"
 ```
 
-`$icon-font-path` defaults to `bootstrap/`.
+`$icon-font-path` defaults to `bootstrap/` if asset path helpers are used, and `../fonts/bootstrap/` otherwise.
 
-When using with Compass, Sprockets, or Mincer, make sure to import the relevant path helpers before Bootstrap itself, for example:.
+When using bootstrap-sass with Compass, Sprockets, or Mincer, you **must** import the relevant path helpers before Bootstrap itself, for example:
 
-```sass
-@import bootstrap-compass
-@import bootstrap
+```scss
+@import "bootstrap-compass";
+@import "bootstrap";
 ```
 
 ## Usage
