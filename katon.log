@@ -13214,3 +13214,77 @@ GENERATING!!!!!!
 [00:27:30] Starting 'sass'...
 [00:27:30] Finished 'sass' after 2.9 ms
 [BS] Reloading 1 file (app.css)
+[09:24:57] Starting 'sass'...
+[09:24:57] Finished 'sass' after 1.79 ms
+[09:24:57] Starting 'coffee'...
+[09:24:57] Finished 'coffee' after 2.98 ms
+[09:24:57] Starting 'jekyll-build'...
+[BS] Reloading 1 file (app.js)
+[BS] Reloading 1 file (app.css)
+Configuration file: /Users/chenderson/Projects/hcroft/_config.yml
+            Source: ./source
+       Destination: ./build
+      Generating... 
+GENERATING!!!!!!
+[{"src"=>"/projects/a-matter-of-taste/1-apple-cinema-display.jpg", "width"=>1170, "height"=>640}]
+[{"src"=>"/projects/a-matter-of-taste/1-apple-cinema-display.jpg", "width"=>1170, "height"=>640}, {"src"=>"/projects/a-matter-of-taste/800.jpg", "width"=>1000, "height"=>800}]
+[{"src"=>"/projects/a-matter-of-taste/1-apple-cinema-display.jpg", "width"=>1170, "height"=>640}, {"src"=>"/projects/a-matter-of-taste/800.jpg", "width"=>1000, "height"=>800}, {"src"=>"/projects/a-matter-of-taste/810.jpg", "width"=>1200, "height"=>500}]
+[{"src"=>"/projects/a-matter-of-taste/1-apple-cinema-display.jpg", "width"=>1170, "height"=>640}, {"src"=>"/projects/a-matter-of-taste/800.jpg", "width"=>1000, "height"=>800}, {"src"=>"/projects/a-matter-of-taste/810.jpg", "width"=>1200, "height"=>500}, {"src"=>"/projects/a-matter-of-taste/950-1.jpg", "width"=>400, "height"=>950}]
+[{"src"=>"/projects/a-matter-of-taste/1-apple-cinema-display.jpg", "width"=>1170, "height"=>640}, {"src"=>"/projects/a-matter-of-taste/800.jpg", "width"=>1000, "height"=>800}, {"src"=>"/projects/a-matter-of-taste/810.jpg", "width"=>1200, "height"=>500}, {"src"=>"/projects/a-matter-of-taste/950-1.jpg", "width"=>400, "height"=>950}, {"src"=>"/projects/a-matter-of-taste/950.jpg", "width"=>900, "height"=>950}]
+[{"src"=>"/projects/temp-1/1-featured-test.jpg", "width"=>390, "height"=>390}]
+[{"src"=>"/projects/temp-1/1-featured-test.jpg", "width"=>390, "height"=>390}, {"src"=>"/projects/temp-1/800.jpg", "width"=>1000, "height"=>800}]
+[{"src"=>"/projects/temp-1/1-featured-test.jpg", "width"=>390, "height"=>390}, {"src"=>"/projects/temp-1/800.jpg", "width"=>1000, "height"=>800}, {"src"=>"/projects/temp-1/810.jpg", "width"=>1200, "height"=>500}]
+[{"src"=>"/projects/temp-1/1-featured-test.jpg", "width"=>390, "height"=>390}, {"src"=>"/projects/temp-1/800.jpg", "width"=>1000, "height"=>800}, {"src"=>"/projects/temp-1/810.jpg", "width"=>1200, "height"=>500}, {"src"=>"/projects/temp-1/950-1.jpg", "width"=>400, "height"=>950}]
+[{"src"=>"/projects/temp-1/1-featured-test.jpg", "width"=>390, "height"=>390}, {"src"=>"/projects/temp-1/800.jpg", "width"=>1000, "height"=>800}, {"src"=>"/projects/temp-1/810.jpg", "width"=>1200, "height"=>500}, {"src"=>"/projects/temp-1/950-1.jpg", "width"=>400, "height"=>950}, {"src"=>"/projects/temp-1/950.jpg", "width"=>900, "height"=>950}]
+                    done.
+[09:25:00] Finished 'jekyll-build' after 3.11 s
+[09:25:00] Starting 'jekyll-rebuild'...
+[09:25:00] Finished 'jekyll-rebuild' after 412 μs
+[09:25:01] Starting 'sass'...
+[09:25:01] Finished 'sass' after 2.96 ms
+[BS] Reloading 1 file (app.css)
+[09:25:06] Starting 'coffee'...
+[09:25:06] Finished 'coffee' after 3.7 ms
+[BS] Reloading 1 file (app.js)
+[36m[katon][39m Detected ~/.nvm/alias/default
+[36m[katon][39m Looking for v0.10
+[36m[katon][39m Detected .katon
+[36m[katon][39m Start /Users/chenderson/.katon/hcroft on port 4002
+[09:25:24] Using gulpfile ~/Projects/hcroft/gulpfile.js
+[09:25:24] Starting 'bower'...
+[09:25:24] Starting 'sass'...
+[09:25:24] Finished 'sass' after 7.4 ms
+[09:25:24] Starting 'coffee'...
+[09:25:24] Finished 'coffee' after 5.78 ms
+[09:25:24] Starting 'jekyll-build'...
+[09:25:24] Starting 'watch'...
+[09:25:24] Finished 'watch' after 159 ms
+[09:25:25] Finished 'bower' after 354 ms
+Configuration file: /Users/chenderson/Projects/hcroft/_config.yml
+            Source: ./source
+       Destination: ./build
+      Generating... 
+GENERATING!!!!!!
+[{"src"=>"/projects/a-matter-of-taste/1-apple-cinema-display.jpg", "width"=>1170, "height"=>640}]
+[{"src"=>"/projects/a-matter-of-taste/1-apple-cinema-display.jpg", "width"=>1170, "height"=>640}, {"src"=>"/projects/a-matter-of-taste/800.jpg", "width"=>1000, "height"=>800}]
+[{"src"=>"/projects/a-matter-of-taste/1-apple-cinema-display.jpg", "width"=>1170, "height"=>640}, {"src"=>"/projects/a-matter-of-taste/800.jpg", "width"=>1000, "height"=>800}, {"src"=>"/projects/a-matter-of-taste/810.jpg", "width"=>1200, "height"=>500}]
+[{"src"=>"/projects/a-matter-of-taste/1-apple-cinema-display.jpg", "width"=>1170, "height"=>640}, {"src"=>"/projects/a-matter-of-taste/800.jpg", "width"=>1000, "height"=>800}, {"src"=>"/projects/a-matter-of-taste/810.jpg", "width"=>1200, "height"=>500}, {"src"=>"/projects/a-matter-of-taste/950-1.jpg", "width"=>400, "height"=>950}]
+[{"src"=>"/projects/a-matter-of-taste/1-apple-cinema-display.jpg", "width"=>1170, "height"=>640}, {"src"=>"/projects/a-matter-of-taste/800.jpg", "width"=>1000, "height"=>800}, {"src"=>"/projects/a-matter-of-taste/810.jpg", "width"=>1200, "height"=>500}, {"src"=>"/projects/a-matter-of-taste/950-1.jpg", "width"=>400, "height"=>950}, {"src"=>"/projects/a-matter-of-taste/950.jpg", "width"=>900, "height"=>950}]
+[{"src"=>"/projects/temp-1/1-featured-test.jpg", "width"=>390, "height"=>390}]
+[{"src"=>"/projects/temp-1/1-featured-test.jpg", "width"=>390, "height"=>390}, {"src"=>"/projects/temp-1/800.jpg", "width"=>1000, "height"=>800}]
+[{"src"=>"/projects/temp-1/1-featured-test.jpg", "width"=>390, "height"=>390}, {"src"=>"/projects/temp-1/800.jpg", "width"=>1000, "height"=>800}, {"src"=>"/projects/temp-1/810.jpg", "width"=>1200, "height"=>500}]
+[{"src"=>"/projects/temp-1/1-featured-test.jpg", "width"=>390, "height"=>390}, {"src"=>"/projects/temp-1/800.jpg", "width"=>1000, "height"=>800}, {"src"=>"/projects/temp-1/810.jpg", "width"=>1200, "height"=>500}, {"src"=>"/projects/temp-1/950-1.jpg", "width"=>400, "height"=>950}]
+[{"src"=>"/projects/temp-1/1-featured-test.jpg", "width"=>390, "height"=>390}, {"src"=>"/projects/temp-1/800.jpg", "width"=>1000, "height"=>800}, {"src"=>"/projects/temp-1/810.jpg", "width"=>1200, "height"=>500}, {"src"=>"/projects/temp-1/950-1.jpg", "width"=>400, "height"=>950}, {"src"=>"/projects/temp-1/950.jpg", "width"=>900, "height"=>950}]
+                    done.
+[09:25:27] Finished 'jekyll-build' after 2.9 s
+[09:25:27] Starting 'jekyll-rebuild'...
+[09:25:27] Finished 'jekyll-rebuild' after 37 μs
+[09:25:27] Starting 'browser-sync'...
+[09:25:27] Finished 'browser-sync' after 7.29 ms
+[09:25:27] Starting 'default'...
+[09:25:27] Finished 'default' after 19 μs
+[BS] Local: >>> http://localhost:4002
+[BS] External: >>> http://0.0.0.0:4002
+[BS] Serving files from: ./build
+[BS] Serving files from: .
+

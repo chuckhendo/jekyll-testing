@@ -1,4 +1,42 @@
-@import "variables";
+$icon-animation-speed: 1s;
+
+@keyframes navButtonTop {
+	0% {
+		transform: translate3d(0, 0, 0) rotate(0deg);
+	}
+	50% {
+		transform: translate3d(0, $navBtnMargin + $navBtnLineHeight, 0) rotate(0deg);
+	}
+	100% {
+		transform: translate3d(0, $navBtnMargin + $navBtnLineHeight, 0) rotate(90deg);
+	}
+}
+
+@keyframes navButtonBottom {
+	0% {
+		transform: translate3d(0, 0, 0) rotate(0deg);
+	}
+	50% {
+		transform: translate3d(0, -$navBtnMargin - $navBtnLineHeight, 0) rotate(0deg);
+	}
+	100% {
+		transform: translate3d(0, -$navBtnMargin - $navBtnLineHeight, 0) rotate(90deg);
+	}
+}
+
+@keyframes navButton {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-45deg);
+	}
+}
+
+
 
 /*** Nav Hidden ***/
 header.site-header {
@@ -10,6 +48,7 @@ header.site-header {
 	width: 100%;
 	height: $navHeight;
 	z-index: 15;
+	transition: 0.4s background-color, 0.4s height;
 
 	.container {
 		position: relative;
@@ -22,6 +61,7 @@ header.site-header {
 		color: transparent;
 		opacity: 1;
 		visibility: visible;
+		transition: 0.3s opacity;
 
 		&:before {
 			font-size: 65px;
@@ -54,6 +94,8 @@ header.site-header {
 			left: 0;
 			right: 0;
 			margin: auto;
+			transform: translate3d(0, 0, 0) rotate(0deg);
+			// animation: navButton $icon-animation-speed ;
 
 			&:before, &:after {
 				content: '';
@@ -66,10 +108,14 @@ header.site-header {
 
 			&:before {
 				top: -$navBtnMargin - $navBtnLineHeight;
+				// animation: navButtonTop $icon-animation-speed;
+				transform: translate3d(0, 0, 0) rotate(0deg);
 			}
 
 			&:after {
 				bottom: -$navBtnMargin - $navBtnLineHeight;
+				// animation: navButtonBottom $icon-animation-speed;
+				transform: translate3d(0, 0, 0) rotate(0deg);
 			}
 		}
 	}
@@ -78,7 +124,12 @@ header.site-header {
 	.site-nav {
 		visibility: hidden;
 		opacity: 0;
-		position: relative;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		margin: 0;
+		transition: 0.2s opacity 0s, 0s visibility 0.3s;
 
 		.main-nav {
 			list-style: none;
@@ -97,6 +148,7 @@ header.site-header {
 				width: 100%;
 				margin-bottom: 12px;
 				padding-bottom: 4px;
+				transition: 0.2s all;
 
 				&:hover, &.current {
 					color: #262626;
@@ -135,6 +187,7 @@ header.site-header {
 					&:before {
 						font-size: 28px;
 						color: $teal;
+						transition: 0.2s all;
 					}
 
 					&:hover:before {
@@ -161,5 +214,44 @@ header.site-header.nav-visible {
 	.site-nav {
 		opacity: 1;
 		visibility: visible;
+		transition-delay: 0.1s;
+	}
+
+
+	.show-nav-icon {
+		
+		transform: rotate(-45deg);
+		&:before {
+			// transition: 0.6s top, 0.6s bottom, 0.6s transform 0.6s;
+			transform: translate3d(0, +$navBtnMargin + $navBtnLineHeight, 0) rotate(90deg);
+		}
+
+		&:after {
+			transform: translate3d(0, -$navBtnMargin - $navBtnLineHeight, 0) rotate(90deg);
+		}
+	}
+}
+
+header.site-header.animate-in .show-nav-icon {
+	animation: $icon-animation-speed navButton;
+
+	&:before {
+		animation: $icon-animation-speed navButtonTop;	
+	}
+
+	&:after {
+		animation: $icon-animation-speed navButtonBottom;	
+	}
+}
+
+header.site-header.animate-out .show-nav-icon {
+	animation: $icon-animation-speed navButton reverse;
+
+	&:before {
+		animation: $icon-animation-speed navButtonTop reverse;	
+	}
+
+	&:after {
+		animation: $icon-animation-speed navButtonBottom reverse;	
 	}
 }
