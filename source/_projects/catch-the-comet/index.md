@@ -1,7 +1,7 @@
 ---
 title: Catch the Comet
 featured: true
-order: 1001
+order: 1005
 ---
 
 This is my content!!! WOOOOOO! 

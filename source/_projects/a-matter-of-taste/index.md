@@ -1,9 +1,9 @@
 ---
-title: A Matter of Taste
+title: Its A Matter of Taste
 featured: true
-order: 1000
+order: 1002
 tags: 
-  - Branding
+  - Integrated Campaign
   - Broadcast Direction
   - Art Direction
   - Design

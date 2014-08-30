@@ -1,20 +1,20 @@
 ## Capabilities
 
-- list style for this section
-- list style for this section
-- list style for this section
-- list style for this section
-- list style for this section
-- list style for this section
-- list style for this section
-- list style for this section
-- list style for this section
-- list style for this section
-- list style for this section
-- list style for this section
-- list style for this section
-- list style for this section
-- list style for this section
+- Creative Direction
+- Brand Development & Creation
+- Brand Strategy
+- Art Direction & Design
+- Broadcast & Video Direction
+- Photography Direction
+- Interactive Creative Direction
+- Information Architecture
+- UX / UI Design
+- Responsive Web Design
+- App Design / UX
+- Front End Development
+- Print & Publication Design
+- Illustration
+- Packaging & Apparel
 - list style for this section
 - list style for this section
 - list style for this section
